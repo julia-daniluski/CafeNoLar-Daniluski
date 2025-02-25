@@ -172,12 +172,12 @@ hr{
     max-width: 1120px;
     padding: 1rem;
     margin: auto;
-    transform: translateY(-50%);
+    transform: translateY(-50%, -50%);
 }
 
 button{
     border: none;
-    padding: 1rem;
+    padding: 0.4rem;
     border-radius: 0.5rem;
     background: #d573489c;
     transition: background-color 0.3s ease;
@@ -264,14 +264,14 @@ article{
 }
  
 .avaliacao{
-    color: #756a67;
+    color: #ffffff;
     font-family: 'Inter', sans-serif;
     font-size: 1rem;
     font-weight: 500;
 }
 
 .descricao{
-    color: #c7bab3;
+    color: #fff;
     font-family: 'Inter', sans-serif;
     font-size: 1rem;
     font-weight: 400;
