@@ -3,96 +3,192 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore dezenas de variações da bebida favorita dos devs ao redor do mundo! ">
-    <link rel="shortcut icon" href="assets/favicon.jpg">
-    <link rel="stylesheet" href="1header.css">
-    <title>Café no lar!☕</title>
+    <meta name="description" content="Explore dezenas de variações da bebida favorita dos devs ao redor do mundo!">
+
+    <!-- Inserindo favicon -->
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+
+    <!-- Link para CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Enchanted Coffee!</title>
 </head>
 <body>
+    <!-- cabeçalho -->
     <header>
         <nav>
-            <span class="tittle">Café No Lar</span>
+            <span class="title" id="home">Enchanted Coffee</span>
 
             <ul class="menu" id="MenuItems">
-                <li><a href="#receitas" style="text-decoration: none; color: #FFF2E780" onmouseover="this.style.color='#FFF';" onmouseout="this.style.color='#FFF2E780';">RECEITAS</a></li>
-            <li><a href="#">NOVIDADES</a></li>
-            <li><a href="#">MELHOR AVALIADAS</a></li>
+                <li><a href="#home" style="text-decoration: none; color: #FFF2E780;" onmouseover="this.style.color='#FFF';" onmouseout="this.style.color='#FFF2E780';">HOME</a></li>
+                <li><a href="#receitas" style="text-decoration: none; color: #FFF2E780;" onmouseover="this.style.color='#FFF';" onmouseout="this.style.color='#FFF2E780';">RECEITAS</a></li>
+                <li><a href="#novidades"  style="text-decoration: none; color: #FFF2E780;" onmouseover="this.style.color='#FFF';" onmouseout="this.style.color='#FFF2E780';">NOVIDADES</a></li>
+                <li><a href="#avalia"  style="text-decoration: none; color: #FFF2E780;" onmouseover="this.style.color='#FFF';" onmouseout="this.style.color='#FFF2E780';">AVALIAÇÕES</a></li>
             </ul>
 
-            <!-- Menu hamburguer (telas menores)-->
-             <img src="assets/menu.png" alt="menu 1" class="menu-icon" onclick="menutoggle()">
+            <!-- Menu hamburguer(Telas menores) -->
+            <img src="assets/menu.png" alt="" class="menu-icon" onclick="menutoggle()">
         </nav>
     </header>
+
+    <!-- Sessão principal (Main) -->
     <main>
         <div class="container">
             <section class="info">
-            <!-- Destaque-->
-             <header class="content">
-                <span class="news marrom">Novidades!</span>
-                <h1>Encontre a receita perfeita!</h1>
-                <hr>
-                <h2 class="subtitle">Explore dezenas de variações da bebida favorita entre os devs ao redor do mundo!</h2>
-             </header>
+                <!-- Destaque -->
+                <header class="content">
+                    <span class="news marrom">Novidades</span>
+                    <h1>Encontre a receita perfeita!</h1>
+                    <hr>
+                    <h2 class="subtitle">Explore dezenas de variações da bebida favorita entre os devs ao redor do mundo!</h2>
+                </header>
+
+                <!-- Galeria de imagens -->
+                 <div class="images" id="novidades">
+                    <figure>
+                        <img src="assets/imagem-1.png" alt="imagem de café">
+                    </figure>
+                    <figure>
+                        <img src="assets/imagem-2.png" alt="imagem de café">
+                    </figure>
+                    <figure>
+                        <img src="assets/imagem-3.png" alt="imagem de café">
+                    </figure>
+                    <figure>
+                        <img src="assets/imagem-04.png" alt="imagem de café">
+                    </figure>
+                    <figure>
+                        <img src="assets/imagem-5.png" alt="imagem de café">
+                    </figure>
+                    <figure><img src="assets/imagem-6.png" alt="imagem de café">
+                    </figure>
+                    <figure>
+                        <img src="assets/imagem-7.png" alt="imagem de café">
+                    </figure>
+                    <figure>
+                        <img src="assets/imagem-8.png" alt="imagem de café">
+                    </figure>
+                    <figure>
+                        <img src="assets/imagem-9.png" alt="imagem de café">
+                    </figure>
+                    <figure>
+                        <img src="assets/imagem-10.png" alt="imagem de café">
+                    </figure>
+                    <figure>
+                        <img src="assets/imagem-11.png" alt="imagem de café">
+                    </figure>
+                    <figure>
+                        <img src="assets/imagem-12.png" alt="imagem de café">
+                    </figure>
+                 </div>
+            </section>
         </div>
 
-        <!-- Galeria de imagens -->
-         <div class="images">
-            <figure>
-                <img src="assets/imagem-1.png" alt="">
-            </figure>
-            <figure>
-                <img src="assets/imagem-2.png" alt="">
-            </figure>
-            <figure>
-                <img src="assets/imagem-3.png" alt="">
-            </figure>
-            <figure>
-                <img src="assets/imagem-04.png" alt="">
-            </figure>
-            <figure>
-                <img src="assets/imagem-5.png" alt="">
-            </figure>
-            <figure>
-                <img src="assets/imagem-6.png" alt="">
-            </figure>
-            <figure>
-                <img src="assets/imagem-7.png" alt="">
-            </figure>
-            <figure>
-                <img src="assets/imagem-8.png" alt="">
-            </figure>
-            <figure>
-                <img src="assets/imagem-9.png" alt="">
-            </figure>
-            <figure>
-                <img src="assets/imagem-10.png" alt="">
-            </figure>
-            <figure>
-                <img src="assets/imagem-11.png" alt="">
-            </figure>
-            <figure>
-                <img src="assets/imagem-12.png" alt="">
-            </figure>
-         </div>
+        <!-- Botão -->
+        <section class="button">
+            <button type="button">
+                <a href="#receitas" style="text-decoration: none; color: #ffffff;">⇓</a>
+            </button>
         </section>
+        <!-- Destaque das Receitas -->
+         <section class="receitas" id="receitas">
+            <header class="receitas-content">
+                <span class="news marrom">Receitas</span>
+                <h2 class="receitas-title">Confira as últimas receitas</h2>
+                <p class="receitas-subtitle">Dê uma olhada nas receitas mais amadas!</p>
+            </header>
+
+            <!-- Receitas -->
+            <article>
+
+                <!-- Primeira receita -->
+                <div class="card">
+                    <div class="card-2">
+                        <header class="card-3">
+                            <div class="legend">
+                                <span class="news amarelo">Em alta🔥</span>
+                                <h3 class="cappuccino">Cappuccino</h3>
+                            </div>
+                            <p class="avaliacao">Extraordinário - 1/4</p>
+                        </header>
+
+                        <p class="descricao">Delicie-se com a cremosidade e o aroma irresistível do nosso cappuccino. Transforme seus momentos em pura indulgência. Uma ótima opção para quem, como eu, não g0osta de café! ☕ #CappuccinoPerfeito
+                        </p>
+                        <div class="author">
+                            <img src="assets/Avatar.png" alt="foto do avatar">
+                            <span class="">Lara Silva</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Segunda receita -->
+                 <div class="card">
+                    <div class="card-2">
+                        <header class="card-3">
+                            <div class="legend">
+                                <span class="news amarelo">Em alta🔥</span>
+                                <h3 class="cappuccino">Brownie</h3>
+                            </div>
+                            <p class="avaliacao">Extraordinário - 2/4</p>
+                        </header>
+
+                        <p class="descricao">Dê um toque doce ao seu dia com nossos irresistíveis brownies. Uma explosão de sabor em cada mordida! 🍫#MomentoDoce</p>
+                        <div class="author">
+                            <img src="assets/Avatar (1).png" alt="foto do avatar">
+                            <span class="">Luana Andrade</span>
+                        </div>
+                    </div>
+                 </div>
+
+                 <!-- Terceira receita -->
+                 <div class="card">
+                    <div class="card-2">
+                        <header class="card-3">
+                            <div class="legend">
+                                <span class="news amarelo">Em alta🔥</span>
+                                <h3 class="cappuccino">Expresso</h3>
+                            </div>
+                            <p class="avaliacao">Extraordinário - 3/4</p>
+                        </header>
+
+                        <p class="descricao">Não é apenas o café que inspirou Sabrina Carpenter a escrever o hit de 2024, é o café que desperta seus sentidos com excelência. Uma experiência única, uma xícara por vez! ☕ #thatsmeexpresso</p>
+                        <div class="author">
+                            <img src="assets/Avatar(2).png" alt="foto do avatar">
+                            <span class="">Simone Ashley</span>
+                        </div>
+                    </div>
+                 </div>
+
+                 <!-- Quarta receita -->
+                 <div class="card">
+                    <div class="card-2">
+                        <header class="card-3">
+                            <div class="legend">
+                                <span class="news amarelo">Em alta🔥</span>
+                                <h3 class="cappuccino">Bolo de Cenoura</h3>
+                            </div>
+                            <p class="avaliacao" id="avalia">Extraordinário - 4/4</p>
+                        </header>
+
+                        <p class="descricao">Um pedaço de céu em cada fatia: exeperimente nosso Bolo de Cenoura com Cobertura de Chocolate. Uma tentação irresistível! 🥕#DelíciaDoDia</p>
+                        <div class="author">
+                            <img src="assets/Avatar(3).png" alt="foto do avatar">
+                            <span class="">Kaue Vitoriano </span>
+                        </div>
+                    </div>
+                 </div>
+            </article>
+
+         </section>
+
     </main>
-    <!--botão-->
-    <section class="button">
-        <button type="button">
-            <a href="#receitas"><img src= "./assets/button.svg"></a>
-        </button>
-    </section>
 
-    <section class="receitas" id="receitas">
-        <header class="receitas-content">
-            <span class="news marrom">Receitas!</span>
-            <h2 class="receitas-tittle">Confira as últimas receitas</h2>
-        </header>
-    </section>
-    
-
-
-
+    <!-- ________________________________________________ -->
+    <!-- Footer(Rodapé) -->
+     <footer>
+        <p class="footer-container">Copyright © SESI/SENAI 2025</p>
+        <p class="footer-content">Este site foi redigido por Daniluski, mestra das palavras e do café!</p>
+     </footer>
     <script src="efeitos.js"></script>
 </body>
 </html>

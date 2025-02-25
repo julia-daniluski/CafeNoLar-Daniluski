@@ -1,0 +1,376 @@
+/* Importação das Fonts Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500&family=Inter:wgth@600&family=Montserrat:wght@800&family=Teko:wght@600&display=swap');
+
+/* Estilos gerais (Todo o projeto) */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Define o modelo de caixa para incluir padding e borda no tamanho total do elemento */
+}
+
+body{
+    background: #1f1517;
+    color: #FFFF;
+}
+
+html{
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+}
+
+a{
+    text-decoration: none; /* Remove a decoração de texto do elemento */
+}
+
+ul{
+    list-style-type: none; /*Remove os marcadores de linha (bolinhas) de um elemento da lista */
+}
+
+nav{
+    max-width: 1120px; /* Define a largura máxima do elemento em 1120 pixels */
+    margin: auto; /* Centraliza o elemento horizontalmente na tela */
+    padding: 1.5rem 10rem; 
+    /* 1.5rem: Isso define o preenchimento vertical (Topo e base) do elemento em 1.5 vezes o tamanho da fonte do elemento raiz. Se a fonte do elemento raiz for 16 pixels, isso resultaria  em um preenchimento vertical de 24 px */
+    /* 10rem: preenchimento horizontal (esquerda e direita) */
+
+    display: flex; /* container flexível */
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.title{
+    font-family: 'Teko', sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    text-transform: uppercase;
+    left: 10px;
+}
+
+/* Menu hamburguer */
+.menu-toggle{
+    display: none; /* Não exibe em telas grandes */
+    cursor: pointer;
+}
+
+/* Imagem do Hamburguer(Responsividade) */
+.menu-icon{
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    color: #fff2e780;
+    margin-top: 9px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.menu a:hover{
+    color: #fff;
+}
+
+.menu a:visited{
+    color: #FFF2E780;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+.container{
+    background: #181012;
+    transform: translateX(100%);
+    opacity: 0;
+    transition: transform 1s ease, opacity 1s ease;
+}
+
+/* Animação para a entrada da direita para a esquerda */
+.container.slide-from-right {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.info{
+    max-width: 1120px;
+    height: 60hv;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 6rem;
+    align-items: center;
+    padding: 0rem 2rem;
+    margin: auto;
+    overflow: clip;
+}
+
+/* Destaque */
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.news{
+    font-family: 'Epilogue', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+/* Usada na palavra (Novidades) no main */
+.marrom{
+    color: #a45a49;
+}
+
+/* Usada na palavra (Em alta) em receitas*/
+.amarelo{
+    color: #e7a80e;
+}
+
+h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 56px;
+    font-weight: 800;
+    color: #fff;
+}
+
+/* Linha marrom abaixo do titulo principal (Encontre a receita...) */
+hr{
+    border-color: #a45a49;
+}
+
+.subtitle{
+    color: #c7bab3;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+
+/* Galeria de fotos (Mosaico) */
+.images{
+    max-width: 45%;
+    column-count: 4; /* 4 colunas */
+    column-gap: 1rem; /* espaçamentp entre colunas */
+    margin: -1rem;
+}
+
+.images > figure > img{
+    width: 100px;
+    border-radius: 0.5rem;
+}
+
+/* Botão */
+.button{
+    width: 100%;
+    max-width: 1120px;
+    padding: 1rem;
+    margin: auto;
+    transform: translateY(-50%);
+}
+
+button{
+    border: none;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background: #a45a49;
+    transition: background-color 0.3s ease;
+}
+
+button:hover{
+    background: #783f37;
+}
+
+/* Receitas */
+.receitas{
+    display: flex;
+    flex-direction: column;
+    max-width: 1120px;
+    padding: 3rem 2rem;
+    margin: auto;
+    padding-top: 10px;
+}
+
+.receitas-content{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.receitas-title{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff2e7;
+}
+
+.receitas-subtitle{
+    color: #c7bab3;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.amarelo {
+    color: #e7a80e;
+}
+
+article{
+    column-count: 2;
+}
+
+.card{
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: -3rem;
+}
+
+.card-2{
+    background: #241a1c;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    flex-basis: 29rem;
+    margin-top: 2rem;
+}
+
+.card-3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.legend{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.cappuccino{
+    color: #fff2e7;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+ 
+.avaliacao{
+    color: #756a67;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.descricao{
+    color: #c7bab3;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.author{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.author > img{
+    border-radius: 20rem;
+    width: 1.5rem;
+}
+
+/* Footer */
+footer{
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    background: #23181A;
+}
+
+.footer-container{
+    color: #fff2e7;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.footer-content{
+    color: rgba(255, 242, 231, 0.50);
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+
+/* Responsividade (Telas menores que 768px) */
+
+@media screen and (max-width: 768px){
+    /* Header */
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: #333;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+        z-index: 9;
+    }
+
+    nav ul li{
+        display: block;
+        margin: auto;
+        margin-top: 10px;
+        margin-top: 10px;
+    }
+
+    .menu{
+        margin-left: 0px;
+    }
+
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+        margin-right: -70px;
+    }
+
+    .title{
+        margin-left: -100px;
+    }
+
+    .container{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .images{
+        column-count: 1;
+        column-gap: 0.5rem;
+    }
+
+    .receitas{
+        padding-top: 0px;
+    }
+
+    .button{
+        padding-bottom: 0px;
+    }
+
+    article{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+}
