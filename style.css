@@ -125,7 +125,7 @@ main{
 
 /* Usada na palavra (Novidades) no main */
 .marrom{
-    color: #a45a49;
+    color: #d573489c;
 }
 
 /* Usada na palavra (Em alta) em receitas*/
@@ -179,7 +179,7 @@ button{
     border: none;
     padding: 1rem;
     border-radius: 0.5rem;
-    background: #a45a49;
+    background: #d573489c;
     transition: background-color 0.3s ease;
 }
 
